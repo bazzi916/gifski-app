@@ -168,7 +168,7 @@ final class MainWindowController: NSWindowController {
 				case .cancelled:
 					break
 				default:
-					self.presentError(error, modalFor: self.window)
+					self.presentError(SoftError(error), modalFor: self.window)
 				}
 			}
 		}
